@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fba6d2446d.js" crossorigin="anonymous"></script>
+    <title>계산기</title>
+    <style>
+        .type {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+                        "c plus-minus percent divide"
+                        "one two three multi"
+                        "four five six minus"
+                        "seven eight nine plus"
+                        "ze ze do equal";
+        }
+        .c{
+            grid-area: c;
+        }
+        .plus-minus{
+            grid-area: plus-minus;
+        }
+        .percent{
+            grid-area: percent;
+        }
+        .divide{
+            grid-area: divide;
+        }
+        .multiply{
+            grid-area: multi;
+        }
+        .minus{
+            grid-area: minus;
+        }
+        .plus{
+            grid-area: plus;
+        }
+        .equal{
+            grid-area: equal;
+        }
+        .dot{
+            grid-area: do;
+        }
+        .one{
+            grid-area: one;
+        }
+        .two{
+            grid-area: two;
+        }
+        .three{
+            grid-area: three;
+        }
+        .four{
+            grid-area: four;
+        }
+        .five{
+            grid-area: five;
+        }
+        .six{
+            grid-area: six;
+        }
+        .seven{
+            grid-area: seven;
+        }
+        .eight{
+            grid-area: eight;
+        }
+        .nine{
+            grid-area: nine;
+        }
+        .zero{
+            grid-area: ze;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            계산기
+        </h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="screen"></div>
+
+            <div class="type">
+                <div class="C">
+                    C
+                </div>
+                <div class="plus-minus">
+                    <i class="fa-solid fa-plus-minus"></i>
+                </div>
+                <div class="percent">
+                    <i class="fa-solid fa-percent"></i>
+                </div>
+                <div class="divide">
+                    <i class="fa-solid fa-divide"></i>
+                </div>
+                <div class="multiply">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="mius">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="equal">
+                    <i class="fa-solid fa-equals"></i>
+                </div>
+                <div class="dot">.</div>
+                <div class="one">1</div>
+                <div class="two">2</div>
+                <div class="three">3</div>
+                <div class="four">4</div>
+                <div class="five">5</div>
+                <div class="six">6</div>
+                <div class="seven">7</div>
+                <div class="eight">8</div>
+                <div class="nine">9</div>
+                <div class="zero">0</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
