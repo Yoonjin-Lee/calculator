@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/fba6d2446d.js" crossorigin="anonymous"></script>
     <title>계산기</title>
     <style>
+        *{
+            padding: 0; margin: 0;
+        }
         .type {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -17,62 +20,139 @@
                         "seven eight nine plus"
                         "ze ze do equal";
         }
-        .c{
+        .C{
             grid-area: c;
+            background-color: rgb(31, 31, 32);
+            color: white;
         }
         .plus-minus{
             grid-area: plus-minus;
+            background-color: rgb(31, 31, 32);
         }
         .percent{
             grid-area: percent;
+            background-color: rgb(31, 31, 32);
         }
         .divide{
             grid-area: divide;
+            background-color: rgb(253, 141, 14);
         }
         .multiply{
             grid-area: multi;
+            background-color: rgb(253, 141, 14);
         }
         .minus{
             grid-area: minus;
+            background-color: rgb(253, 141, 14);
         }
         .plus{
             grid-area: plus;
+            background-color: rgb(253, 141, 14);
         }
         .equal{
             grid-area: equal;
+            background-color: rgb(253, 141, 14);
         }
         .dot{
             grid-area: do;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .one{
             grid-area: one;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .two{
             grid-area: two;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .three{
             grid-area: three;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .four{
             grid-area: four;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .five{
             grid-area: five;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .six{
             grid-area: six;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .seven{
             grid-area: seven;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .eight{
             grid-area: eight;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .nine{
             grid-area: nine;
+            background-color: rgb(76, 76, 77);
+            color: white;
         }
         .zero{
             grid-area: ze;
+            background-color: rgb(76, 76, 77);
+            color: white;
+        }
+        .type div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border: 1px rgb(31, 31, 32) solid;
+            font-size: larger;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 40%;
+            height: 80%;
+        }
+        .type{
+            width: 100%;
+            height: 70%;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 254, 234);
+            height: 100%;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            background-color: rgb(30, 30, 30);
+            min-height: 100px;
+        }
+        header h1{
+            padding-left: 60px;
+            color: white;
+        }
+        .screen{
+            width: 100%;
+            height: 100px;
+            flex: 1;
+            background-color: black;
+        }
+        html, body{
+            height: 100%;
         }
     </style>
 </head>
@@ -88,29 +168,27 @@
             <div class="screen"></div>
 
             <div class="type">
-                <div class="C">
-                    C
-                </div>
+                <div class="C">C</div>
                 <div class="plus-minus">
-                    <i class="fa-solid fa-plus-minus"></i>
+                    <i class="fa-solid fa-plus-minus" style="color: white;"></i>
                 </div>
                 <div class="percent">
-                    <i class="fa-solid fa-percent"></i>
+                    <i class="fa-solid fa-percent" style="color: white;"></i>
                 </div>
                 <div class="divide">
-                    <i class="fa-solid fa-divide"></i>
+                    <i class="fa-solid fa-divide" style="color: white;"></i>
                 </div>
                 <div class="multiply">
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-xmark" style="color: white;"></i>
                 </div>
                 <div class="plus">
-                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-plus" style="color: white;"></i>
                 </div>
-                <div class="mius">
-                    <i class="fa-solid fa-plus"></i>
+                <div class="minus">
+                    <i class="fa-solid fa-minus" style="color: white;"></i>
                 </div>
                 <div class="equal">
-                    <i class="fa-solid fa-equals"></i>
+                    <i class="fa-solid fa-equals" style="color: white;"></i>
                 </div>
                 <div class="dot">.</div>
                 <div class="one">1</div>
