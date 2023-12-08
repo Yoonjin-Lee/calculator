@@ -1,4 +1,5 @@
 const screen = document.querySelector("#input")
+const way = document.querySelector("#operator")
 const numbers = document.querySelectorAll(".number")
 const operater = document.querySelectorAll(".operation")
 const buttons = document.querySelectorAll("button")
@@ -38,6 +39,7 @@ let calculator = () => {
                 operatorOn = click;
                 previousNum = screen.textContent;
                 screen.textContent = "";
+                way.textContent = click;
                 isFirstDigit = true;
                 // 연산자를 누르면 다음 숫자는 첫 번째 숫자가 됨
             }
@@ -86,12 +88,14 @@ let calculator = () => {
                     operatorOn,
                     resentNum
                 );
+                way.textContent = "";
                 isFirstDigit = true;
                 // 결과를 표시한 후에는 다음 숫자는 첫 번째 숫자가 됨
             }
             if (action === "clear") {
                 //C 버튼 눌렀을 때 모든 할당 초기화
                 screen.textContent = '';
+                way.textContent = '';
                 previousNum = '';
                 operatorOn = '';
                 resentNum = '';
