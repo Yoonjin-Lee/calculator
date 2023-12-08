@@ -1,25 +1,25 @@
 const screen = document.querySelector("#input")
 const way = document.querySelector("#operator")
 const numbers = document.querySelectorAll(".number")
-const operater = document.querySelectorAll(".operation")
+const operator = document.querySelectorAll(".operation")
 const buttons = document.querySelectorAll("button")
 
 let operatorOn = ''; // 연산자 입력
 let previousNum = ''; //이전 값
 let resentNum = ''; // 최근값
 
-let calculate = (n1, operater, n2) => {
+let calculate = (n1, operator, n2) => {
     let result = 0;
-    if (operater == '+') {
+    if (operator == '+') {
         result = Number(n1) + Number(n2);
     }
-    if (operater == '-') {
+    if (operator == '-') {
         result = Number(n1) - Number(n2);
     }
-    if (operater == 'x') {
+    if (operator == 'x') {
         result = Number(n1) * Number(n2);
     }
-    if (operater == '/') {
+    if (operator == '/') {
         result = Number(n1) / Number(n2);
     }
 
