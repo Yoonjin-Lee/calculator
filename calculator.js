@@ -23,6 +23,9 @@ let calculate = (n1, operater, n2) => {
         result = Number(n1) / Number(n2);
     }
 
+    if(String(result).length > 10){
+        result = 'error'
+    }
     return String(result);
 };
 
